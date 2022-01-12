@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="150" Width="450">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <TextBox Name="tbNum1" Height="30" Width="100" PreviewTextInput="tbNum1_PreviewTextInput" Margin="10,0,10,0" FontSize="20"/>
+            <ComboBox Name="cbEnterAction" Height="30" Width="40" Margin="0,0,10,0" FontSize="20" >
+                <ComboBoxItem Content="+"/>
+                <ComboBoxItem Content="-"/>
+                <ComboBoxItem Content="*"/>
+                <ComboBoxItem Content="/"/>
+            </ComboBox>
+            <TextBox Name="tbNum2" Height="30" Width="100" PreviewTextInput="tbNum2_PreviewTextInput" Margin="0,0,10,0" FontSize="20" />
+            <Button x:Name="btnGetResult" Content="=" Margin="0,0,10,0" Height="30" Width="40" FontSize="20" Click="btnGetResult_Click"/>
+            <TextBox x:Name="tbNumResult" Height="30" Width="100" IsReadOnly="True" FontSize="20" />
+        </StackPanel>
+        
+
+
+    </Grid>
+</Window>
